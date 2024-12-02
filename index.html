@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Mi Portafolio</h1>
+            <p class="mt-2 text-lg">Proyectos, experiencia y habilidades en desarrollo web</p>
+        </div>
+    </header>
+
+    <!-- Sección de proyectos -->
+    <section id="proyectos" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-indigo-600 mb-8">Proyectos Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Proyecto 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="data:image/png;base64,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" alt="Proyecto 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 1</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="data:image/jpeg;base64,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" alt="Proyecto 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 2</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVXnR8WCIsjTru9vQps3ht2HOESEfcGZAI_w&s" alt="Proyecto 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 3</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd50RZu3viAa4RuAc4lYNqqYFxm-Dggw-JNQ&s" alt="Proyecto 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 4</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://raw.githubusercontent.com/belen15/Inventario/master/Logo.jpg" alt="Proyecto 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 5</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLHwz50zpDzlPiYH3k-ljP-cj0SIYVKbjH2g&s" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 6</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                 <!-- Proyecto 7 -->
+                 <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="img/inno.png" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 7</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                 <!-- Proyecto 8 -->
+                 <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://i.ytimg.com/vi/2kPf4MkWzNM/maxresdefault.jpg" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 8</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                 <!-- Proyecto 9 -->
+                 <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://media.licdn.com/dms/image/v2/C4E12AQF1UVRsTGJNUw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1520214647232?e=2147483647&v=beta&t=UGC1G28y3lpR87Vr9kVR5MlAF1H9x23ksukfY3bFUfc" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 9</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                 <!-- Proyecto 10 -->
+                 <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://www.buk.cl/hubfs/control%20de%20asistencia%2016%20jul-01-1.jpg" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 10</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                 <!-- Proyecto 11 -->
+                 <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd50RZu3viAa4RuAc4lYNqqYFxm-Dggw-JNQ&s" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 11</h3>
+                    <p class="text-gray-600 mt-2">Descripción breve del proyecto que muestra tus habilidades y tecnologías utilizadas.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                 <!-- Proyecto 12 -->
+                 <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://i.ytimg.com/vi/2kPf4MkWzNM/maxresdefault.jpg" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 12</h3>
+                    <p class="text-gray-600 mt-2">Descripción breve del proyecto que muestra tus habilidades y tecnologías utilizadas.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+
+                  <!-- Proyecto 13 -->
+                  <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://play-lh.googleusercontent.com/3aWGqSf3T_p3F6wc8FFvcZcnjWlxpZdNaqFVEvPwQ1gTOPkVoZwq6cYvfK9eCkwCXbRY" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 13</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                  <!-- Proyecto 14 -->
+                  <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="img/14.png" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 14</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                  <!-- Proyecto 15 -->
+                  <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYHQxTxdpKtjuCluU4XDY2-_TjPfEkqH4sgQ&s" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 15</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+
+                  <!-- Proyecto 3 -->
+                  <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png" alt="Proyecto 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Proyecto 16</h3>
+                    <a href="#" class="text-indigo-600 hover:underline mt-4 inline-block">Ver más</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="py-16 bg-indigo-600 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">¿Quieres trabajar conmigo?</h2>
+            <p class="text-lg mb-6">Estoy disponible para proyectos freelance o colaboraciones. ¡Contáctame!</p>
+            <a href="mailto:ejemplo@correo.com" class="bg-white text-indigo-600 px-6 py-3 rounded-lg text-xl font-semibold hover:bg-gray-100 transition-colors">Contactar</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
